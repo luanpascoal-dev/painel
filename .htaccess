@@ -1,0 +1,46 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Protege o arquivo .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files .sql>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files .css>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files .js>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files .png>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files database.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files sidebar.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
