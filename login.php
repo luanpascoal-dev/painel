@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             // Se for admin, redireciona para o dashboard, senão para a página inicial
             if($user['nivel_acesso'] == 'admin') {
-                header("Location: dashboard");
+                header("Location: dashboard/home");
             } else {
                 header("Location: index");
             }

@@ -4,7 +4,7 @@ include 'database.php';
 
 $nome = "Luan Pascoal";
 $usuario = "luanpascoal";
-$senha = password_hash("luanpascoal", PASSWORD_DEFAULT);
+$senha = password_hash("123456", PASSWORD_DEFAULT);
 $email = "luanpascoal@gmail.com";
 
 $sql = "INSERT INTO usuarios (nome, usuario, senha, email) VALUES (?, ?, ?, ?)";

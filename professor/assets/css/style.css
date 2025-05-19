@@ -203,11 +203,6 @@ th {
 
 .btn-warning {
     background-color: var(--warning-color);
-    color: white;
-}
-
-.btn-success {
-    background-color: var(--success-color);
 }
 
 .btn-danger {
